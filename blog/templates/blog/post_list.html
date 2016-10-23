@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
+        	<p> {{post.title}}</p><br>
+        	<p>{{post.text | linebreaksbr}} <br><div align="right"> by:{{post.author}}</div></p>
+        {%endfor%}
+        	    </body>
+</html>
